@@ -39,11 +39,8 @@ Add to the previously created object a boolean value to rappresent wheter you ha
 
 /* WRITE YOUR CODE HERE */
 
-me2 = {
-    LicenseDrive:"True",
-};
-console.log(me2)
-console.log(me + me2)
+person.drivingLicense = true
+// person["drivingLicense"] = true
 
 
 
@@ -64,6 +61,11 @@ Create a second object with name, surname, email address and verify that this ob
 
 /* WRITE YOUR CODE HERE */
 
+let secondPerson = {
+    name: "Second",
+    surname:"Surname",
+    email: "second@strive.school"
+}
 
 
 /* EXERCISE 6
@@ -135,6 +137,24 @@ for (i=0; i < cargroup.length; i++) {
 }
 
 
+/*let car1 = { brand: "Toyota", model: "Yaris", licensePlate: "AZXSASS"}
+let car2 = {
+    ...car1,
+    licensePlate: "Whatever"
+}
+let car3 = {
+    ...car1,
+    licensePlate: "Whatever1"
+}
+let car4 = {
+    ...car1,
+    licensePlate: "Whatever2"
+}
+let car5 = {
+    ...car1,
+    licensePlate: "Whatever3"
+} */
+
 
 /* EXERCISE 9
 Create a new array called carsForRent containing all the cars from the previous exercise.
@@ -142,7 +162,7 @@ Create a new array called carsForRent containing all the cars from the previous 
 
 /* WRITE YOUR CODE HERE */
 
-
+let carsForRent = [ car1, car2, car3, car4, car5]
 
 
 /* EXERCISE 10
@@ -151,11 +171,18 @@ Remove the first and the last car from the carsForRent array.
 
 /* WRITE YOUR CODE HERE */
 
+
+carsForRent.pop()
+carsForRent.shift()
+
+
 /* EXERCISE 11
 Print in the console the TYPES of the car variable, of its licensePlate and of the its brand properties.
 */
 
 /* WRITE YOUR CODE HERE */
+
+console.log(car.brand,car.model, car.licensePlate)
 
 /* EXERCISE 12
 Create a new array called carsForSale and insert 3 cars in it.
@@ -164,11 +191,23 @@ Store in a variable totalCars the number of cars present in both carsForSale and
 
 /* WRITE YOUR CODE HERE */
 
+
+let carsForSale = [car1,car5, car2]
+let totalCars = {
+    carsForSale: carsForSale.length,
+    carsForRent: carsForRent.length
+}
+
 /* EXERCISE 13
 Print in the console the data from each car in the carsForSale array.
 */
 
 /* WRITE YOUR CODE HERE */
+
+console.log(carsForSale[0].licensePlate)
+console.log(carsForSale[1].licensePlate)
+console.log(carsForSale[2].licensePlate)
+
 
 /* WHEN YOU ARE FINISHED
 Send the code on the Eduflow platform. In the next days we'll also learn how to use GIT
